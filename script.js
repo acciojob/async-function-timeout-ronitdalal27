@@ -8,8 +8,14 @@ btn.addEventListener('click',async () => { //using async fun on click of button,
 	document.getElementById("output").innerText = text;
 });
 
-async function delayFunction(delay){
+function delayFunction(delay){
 	return new Promise((resolve) => {
 		setTimeout(resolve,delay)
 	})
 }
+
+/*
+	in the entire code we are just taking text an delay from html form
+	creating new function delayFunction() passing that delay to it
+	waiting for specified delay and 
+*/
